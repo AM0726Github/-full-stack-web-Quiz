@@ -2,28 +2,28 @@
 
 ## Description
 
-This project is an application that an employee can use to generate a random password based on criteria they’ve selected.
-The password can include special characters(https://owasp.org/www-community/password-special-characters).  
+This challenge invites to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will dynamically updated HTML and CSS powered by JavaScript code.  
 
 ## Tasks completed
 
 * Was structured git hub repository with deployed result web page.
-* Was aded function to generate random password by accepted citeria.
-* Was reconstructed local start point code and files structure.
+* Was aded javascript code to dinamically update page as shown in mock-up.
+* Was constructed local repo code and files structure.
 * Was added some responsibility to css code. 
-* Was added conditional loops to protect right enters for password length 
 
 ## Links
 
-* deployed website https://am0726github.github.io/password-challenge/
+* deployed website https://am0726github.github.io/full-stack-web-Quiz/
 
-* Code repository https://github.com/AM0726Github/password-challenge
+* Code repository https://github.com/AM0726Github/full-stack-web-Quiz
 
 ## Screenshot of Web page
 
-![Web page](./assets/images/screenshoot.JPG)
+.
 
 ## References and tutorials utilized
 
-* https://stackoverflow.com/questions/9719570/generate-random-password-string-with-requirements-in-javascript/9719815
+* https://www.geeksforgeeks.org/javascript-quiz-set-2/?ref=lbp
 * https://www.w3schools.com/js
+* https://www.w3schools.com/jsref/met_win_setinterval.asp
+* https://developer.mozilla.org/en-US/docs/Web/API
