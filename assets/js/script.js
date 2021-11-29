@@ -1,51 +1,70 @@
-var formEl = document.querySelector("#task-form"); 
-var tasksToDoEl = document.querySelector("#tasks-to-do"); 
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
 
-var taskFormHandler = function(event) {
 
-    event.preventDefault();
+var quizHeader = document.getElementById('questionDisplay');
+var quizParagraph = document.getElementById('explanation-paragraph');
+var startQuizBtnEl = document.getElementById('start-quiz'); // Start Quiz button Btn El
 
-    var taskNameInput = document.querySelector("input[name='task-name']").value;
-    var taskTypeInput = document.querySelector("select[name='task-type']").value;
-
-    // check if input values are empty strings
-    if (!taskNameInput || !taskTypeInput) {
-        alert("You need to fill out the task form!");
-        return false;
-        formEl.reset();
+const myQuestions = [
+    {
+      question: "Who invented JavaScript?",
+      answers: {
+        a: "Douglas Crockford",
+        b: "Sheryl Sandberg",
+        c: "Brendan Eich"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Which one of these is a JavaScript package manager?",
+      answers: {
+        a: "Node.js",
+        b: "TypeScript",
+        c: "npm"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Which tool can you use to ensure code quality?",
+      answers: {
+        a: "Angular",
+        b: "jQuery",
+        c: "RequireJS",
+        d: "ESLint"
+      },
+      correctAnswer: "d"
+    },
+    {
+        question: "Which tool can you use to ensure code quality?",
+        answers: {
+          a: "Angular",
+          b: "jQuery",
+          c: "RequireJS",
+          d: "ESLint"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "Which tool can you use to ensure code quality?",
+        answers: {
+          a: "Angular",
+          b: "jQuery",
+          c: "RequireJS",
+          d: "ESLint"
+        },
+        correctAnswer: "d"
     }
-    
-    // package up data as an object
-     var taskDataObj = {
-        name: taskNameInput,
-        type: taskTypeInput
-    };
- 
+];
 
-  // send it as an argument to createTaskEl
-  createTaskEl(taskDataObj);
-  formEl.reset();
+startQuizBtnEl.addEventListener("click", function() {
 
-};
+    startQuizBtnEl.style.display = 'none';
+    quizHeader.style.display = 'none';
+    quizParagraph.style.display = 'none';
 
-var createTaskEl = function(taskDataObj) {
 
-    // create list item
-    var listItemEl = document.createElement("li");
-    listItemEl.className = "task-item";
 
-    // create div to hold task info and add to list item
-    var taskInfoEl = document.createElement("div");
-    // give it a class name
-    taskInfoEl.className = "task-info";
-    // add HTML content to div
-    taskInfoEl.innerHTML = "<h3 class='task-name'>" + taskDataObj.name + "</h3><span class='task-type'>" + taskDataObj.type + "</span>";
 
-    listItemEl.appendChild(taskInfoEl); 
-
-    // add entire list item to list
-    tasksToDoEl.appendChild(listItemEl);
-
-}
-
-formEl.addEventListener("submit", taskFormHandler);
+});
