@@ -9,52 +9,93 @@ var timeLeft = 100;
 
 const myQuestions = [
     {
-      question: "Who invented JavaScript?",
-      answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which one of these is a JavaScript package manager?",
-      answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
-      },
-      correctAnswer: "d"
-    },
-    {
-        question: "Which tool can you use to ensure code quality?",
+        question: "What is the HTML tag under which one can write the JavaScript code?",
         answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+            a: "<javascript>",
+            b: "<scripted>",
+            c: "<script>"
         },
-        correctAnswer: "d"
+        correctAnswer: "c"
     },
     {
-        question: "Which tool can you use to ensure code quality?",
+        question: "Choose the correct JavaScript syntax to change the content of the following HTML code",
         answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+            a: "document.getElement([id]]).innerHTML='text';",
+            b: "document.getElementById([id]]).innerHTML='text'",
+            c: "document.getId([id]])='text'"
         },
-        correctAnswer: "d"
+        correctAnswer: "b"
+    },
+    {
+        question: "Which of the following is the correct syntax to display 'Text' in an alert box using JavaScript?",
+        answers: {
+            a: "alertbox('Text')",
+            b: "msgbox('Text')",
+            c: "alert('Text')"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "What is the correct syntax for referring to an external script called “Script.js”",
+        answers: {
+            a: "<script src='Script.js'>",
+            b: "<script href='Script.js'>",
+            c: "<script name='Script.js'>"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "The external JavaScript file must contain <script> tag. True or False?",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Which of the following is not a reserved word in JavaScript?",
+        answers: {
+            a: "throws",
+            b: "program",
+            c: "short"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "How is the function called in JavaScript?",
+        answers: {
+            a: "call functionName();",
+            b: "functionName();",
+            c: "function: functionName();"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "What is the correct syntax for adding comments in JavaScript?",
+        answers: {
+            a: "<!–This is a comment–>",
+            b: "//This is a comment ",
+            c: "**This is a comment**"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "What is the JavaScript syntax for printing values in Console?",
+        answers: {
+            a: "print(5);",
+            b: "console.log(5);",
+            c: "console.print(5);"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Which of the following is the pop() method does?",
+        answers: {
+            a: "Display the first element",
+            b: "Increments length by 1",
+            c: "Decrements length by 1"
+        },
+        correctAnswer: "c"
     }
 ];
 
