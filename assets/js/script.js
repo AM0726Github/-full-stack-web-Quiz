@@ -126,4 +126,5 @@ startQuizBtnEl.addEventListener("click", function() {
     }
 
     changetime();
+    // Test
 });
