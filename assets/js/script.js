@@ -10,77 +10,77 @@ let Scores = [];
 var TimeInterval; 
 
 const myQuestions = [
-    // {
-    //     question: "What is the HTML tag under which one can write the JavaScript code?",
-    //     answers: [
-    //         "javascript",
-    //         "scripted",
-    //         "script"
-    //     ],
-    //     correctAnswer: "script"
-    // },
-    // {
-    //     question: "Choose the correct JavaScript syntax to change the content of the following HTML code",
-    //     answers: [
-    //         "document.getElement([id]]).innerHTML='text'",
-    //         "document.getElementById([id]]).innerHTML='text'",
-    //         "document.getId([id]])='text'"
-    //     ],
-    //     correctAnswer: "document.getElementById([id]]).innerHTML='text'"
-    // },
-    // {
-    //     question: "Which of the following is the correct syntax to display 'Text' in an alert box using JavaScript?",
-    //     answers: [
-    //         "alertbox('Text')",
-    //         "msgbox('Text')",
-    //         "alert('Text')"
-    //     ],
-    //     correctAnswer: "alert('Text')"
-    // },
-    // {
-    //     question: "What is the correct syntax for referring to an external script called “Script.js”",
-    //     answers: [
-    //         "script src='Script.js'",
-    //         "script href='Script.js'",
-    //         "script name='Script.js'"
-    //     ],
-    //     correctAnswer: "ascript src='Script.js'"
-    // },
-    // {
-    //     question: "The external JavaScript file must contain <script> tag. True or False?",
-    //     answers: [
-    //         "True",
-    //         "False"
-    //     ],
-    //     correctAnswer: "False"
-    // },
-    // {
-    //     question: "Which of the following is not a reserved word in JavaScript?",
-    //     answers: [
-    //         "throws",
-    //         "program",
-    //         "short"
-    //     ],
-    //     correctAnswer: "program"
-    // },
-    // {
-    //     question: "How is the function called in JavaScript?",
-    //     answers: [
-    //         "call functionName();",
-    //         "functionName();",
-    //         "function: functionName();"
-    //     ],
-    //     correctAnswer: "functionName()"
-    // },
-    // {
-    //     question: "What is the correct syntax for adding comments in JavaScript?",
-    //     answers: [
-    //         "!This is a comment",
-    //         "//This is a comment",
-    //         "**This is a comment**"
-    //     ],
-    //     correctAnswer: "//This is a comment"
-    // },
+    {
+        question: "What is the HTML tag under which one can write the JavaScript code?",
+        answers: [
+            "javascript",
+            "scripted",
+            "script"
+        ],
+        correctAnswer: "script"
+    },
+    {
+        question: "Choose the correct JavaScript syntax to change the content of the following HTML code",
+        answers: [
+            "document.getElement([id]]).innerHTML='text'",
+            "document.getElementById([id]]).innerHTML='text'",
+            "document.getId([id]])='text'"
+        ],
+        correctAnswer: "document.getElementById([id]]).innerHTML='text'"
+    },
+    {
+        question: "Which of the following is the correct syntax to display 'Text' in an alert box using JavaScript?",
+        answers: [
+            "alertbox('Text')",
+            "msgbox('Text')",
+            "alert('Text')"
+        ],
+        correctAnswer: "alert('Text')"
+    },
+    {
+        question: "What is the correct syntax for referring to an external script called “Script.js”",
+        answers: [
+            "script src='Script.js'",
+            "script href='Script.js'",
+            "script name='Script.js'"
+        ],
+        correctAnswer: "ascript src='Script.js'"
+    },
+    {
+        question: "The external JavaScript file must contain <script> tag. True or False?",
+        answers: [
+            "True",
+            "False"
+        ],
+        correctAnswer: "False"
+    },
+    {
+        question: "Which of the following is not a reserved word in JavaScript?",
+        answers: [
+            "throws",
+            "program",
+            "short"
+        ],
+        correctAnswer: "program"
+    },
+    {
+        question: "How is the function called in JavaScript?",
+        answers: [
+            "call functionName();",
+            "functionName();",
+            "function: functionName();"
+        ],
+        correctAnswer: "functionName()"
+    },
+    {
+        question: "What is the correct syntax for adding comments in JavaScript?",
+        answers: [
+            "!This is a comment",
+            "//This is a comment",
+            "**This is a comment**"
+        ],
+        correctAnswer: "//This is a comment"
+    },
     {
         question: "What is the JavaScript syntax for printing values in Console?",
         answers: [
