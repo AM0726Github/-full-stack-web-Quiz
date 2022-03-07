@@ -13,10 +13,10 @@
     <header>
         <!-- header elements by start -->
         <div>
-            <button class="btn-Header" id="view-high-scores">View high scores</button>
+            <button class="btn-Header" id="view-high-scores">View score</button>
         </div>
         <div>
-            <p>Time: <span id="timeLeft">100</span></p>
+            <p>Time: <span id="timeLeft">20</span></p>
         </div>
     </header>
 
@@ -25,11 +25,21 @@
         <section class="Quiz-wrapper">
             <div id="Container">
 
-
-                <h2 id="questionDisplay">Coding Quiz Challange</h2>
-                <p id="explanation-paragraph">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.</p>
-                <button class="btn-quiz" id="start-quiz">Start Quiz</button>
-
+                <div class="row justify-content-center pt-5">
+                    <button id="btn" class="btn btn-quiz" type="button" onclick="QuizStart()">Start Quiz</button>
+                </div>
+                <div class="row justify-content-center list-group m-2">
+                    <div id="question-container"></div>
+                </div>
+                <div class="row justify-content-center list-group m-2">
+                    <div id="choice-container"></div>
+                </div>
+                <div class="row justify-content-center m-2">
+                    <div id="answer-container"></div>
+                </div> 
+                <div class="row justify-content-center">
+                    <div class="card" id="result-container"></div>
+                </div>
 
             </div>
 
